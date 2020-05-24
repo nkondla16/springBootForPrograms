@@ -24,10 +24,9 @@ public class TwoSum {
 
     public static void main(String[] args) {
 
-        TwoSum twoSum = new TwoSum();
         Integer[] nums = {21, 17, 4, 3, 2, 5, 7};
 
-        Integer[] result = twoSum.twoSum(nums, 9);
+        Integer[] result = twoSum(nums, 9);
 
         List<Integer> res = new ArrayList<>(Arrays.asList(result));
 
@@ -35,7 +34,7 @@ public class TwoSum {
 
     }
 
-    public Integer[] twoSum(Integer[] nums, int target) {
+    public static Integer[] twoSum(Integer[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
